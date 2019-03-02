@@ -1,16 +1,10 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Mar  1 19:44:55 2019
 
-@author: vlad
-"""
 
 import os
 import csv
 
 # Set path for file
-csvpath = "/Users/vlad/Desktop/election_data.csv"
+csvpath = "election_data.csv"
 
 totalcount_1 = 0
 totalcount_2 = 0
@@ -65,7 +59,7 @@ if (totalcount_4 > totalcount_1) & (totalcount_4 > totalcount_2) & (totalcount_4
     
 print("-------------------")
 
-output_path = os.path.join("Desktop", "election.csv")
+output_path = os.path.join("election.csv")
 with open(output_path, 'w') as csvfile:
     csvwriter = csv.writer(csvfile, delimiter=',')
     csvwriter.writerow(["Election Results"])

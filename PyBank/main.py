@@ -3,7 +3,7 @@ import csv
 
 
 # Set path for file
-csvpath = "Desktop/Budget_data.csv"
+csvpath = "Budget_data.csv"
 
 
 revenueSum = 0
@@ -43,7 +43,7 @@ print ("Average Profit: " +str(average))
 print ("Greatest Profit: " + maxdate +" "+str(maxvalue))
 print ("Greatest Losses: " + mindate +" "+str(minvalue))
 
-output_path = os.path.join("Desktop", "profit.csv")
+output_path = os.path.join("profit.csv")
 with open(output_path, 'w') as csvfile:
     csvwriter = csv.writer(csvfile, delimiter=',')
     csvwriter.writerow(['Criteria', 'Value'])
